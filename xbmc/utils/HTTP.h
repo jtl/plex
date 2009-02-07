@@ -70,7 +70,7 @@ public:
 protected:
   bool Send(char* pBuffer, int iLen);
   bool Connect();
-  bool Recv(int iLen, int timeout = 5000);
+  bool Recv(int iLen, int timeout = 15000);
   bool ReadData(std::string& strData);
   void ParseHeaders();
   int  QuickRecv(int timeout);
